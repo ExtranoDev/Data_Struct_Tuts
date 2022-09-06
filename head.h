@@ -2,6 +2,7 @@
 #define DATASTRUCT
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct user - user data
@@ -17,6 +18,7 @@ struct user
 	char sex;
 	char name[16];
 };
-void print(struct user data);
+void print(struct user *data);
+struct user *parse_struct(char s, int id, char name[]);
 
 #endif
